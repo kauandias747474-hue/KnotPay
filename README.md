@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/github/license/seu-usuario/projetofluxoscrape?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Mojo](https://img.shields.io/badge/Mojo-🔥-white?style=for-the-badge&logo=mojo&logoColor=FF4B12)
+![Mojo](https://img.shields.io/badge/Mojo-white?style=for-the-badge&logo=mojo&logoColor=FF4B12)
 ![Ruby](https://img.shields.io/badge/Ruby-3.3-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
