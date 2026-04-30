@@ -1,7 +1,8 @@
-# FluxoScrape: Polyglot Intelligence Ecosystem
+# 🚀 FluxoScrape: Polyglot Intelligence Ecosystem
 
 ![License](https://img.shields.io/github/license/seu-usuario/projetofluxoscrape?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Mojo](https://img.shields.io/badge/Mojo-🔥-white?style=for-the-badge&logo=mojo&logoColor=FF4B12)
 ![Ruby](https://img.shields.io/badge/Ruby-3.3-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
@@ -13,59 +14,116 @@
 
 ## 🇧🇷 Português (PT-BR)
 
-### 🎯 Por que este projeto existe? (Missão e Visão)
-No mercado digital contemporâneo, a volatilidade de preços é extrema. Empresas que dependem de processos manuais de monitoramento sofrem com a "miopia comercial": quando percebem a movimentação do concorrente, a oportunidade de venda já se dissipou. O **FluxoScrape** foi concebido para ser uma solução de **Inteligência Competitiva Automática**. O objetivo principal é fechar o gap entre a coleta de dados brutos e a tomada de decisão estratégica, utilizando um ecossistema tecnológico que garante que nenhuma informação se perca e que cada insight seja entregue de forma mastigada para o usuário final através de Inteligência Artificial Generativa.
+### 🎯 Por que este projeto existe? (A Crise da Reatividade e a Solução Preditiva)
+No ecossistema de e-commerce moderno, a informação tem um prazo de validade extremamente curto. O projeto **FluxoScrape** não nasceu apenas como uma ferramenta de automação, mas como uma resposta à **Crise da Reatividade Comercial**. 
 
-### 💡 Por que ele é interessante? (Diferenciais Estratégicos)
-O grande diferencial deste projeto reside na sua **Arquitetura de Microserviços Poliglotas**. Enquanto a maioria dos desenvolvedores tenta forçar uma única linguagem a realizar todas as tarefas — muitas vezes sacrificando performance ou escalabilidade — o FluxoScrape respeita as especialidades de cada stack. Além disso, a implementação de um **Bot de IA Consultivo** no front-end eleva o projeto de um simples script de automação para um produto de prateleira (SaaS), onde a tecnologia complexa é escondida por trás de uma interface conversacional intuitiva e poderosa.
+Tradicionalmente, empresas monitoram concorrentes de forma passiva ou através de ferramentas que entregam relatórios estáticos. Quando um gestor recebe um alerta de que seu preço está 15% acima do mercado, ele já perdeu milhares de conversões nas últimas horas. Existe um "vácuo de decisão" entre o fato (a mudança de preço do concorrente) e a ação (o ajuste no seu dashboard). Este projeto existe para **aniquilar essa latência**. Ele transforma o processo de monitoramento em um ciclo de Inteligência de Fluxo Contínuo, permitindo que a tecnologia tome o trabalho pesado de mineração e cálculo, deixando para o humano apenas a decisão final estratégica.
 
-### 🛠 Como o projeto funciona (O Fluxo Profundo do Dado)
-O fluxo de dados é estruturado em uma pipeline robusta de quatro estágios:
-1.  **Orquestração e Input:** Através do Dashboard construído em Laravel 11, o usuário gerencia o inventário e estabelece parâmetros críticos, como SKUs, URLs de rastreio e thresholds de lucratividade.
-2.  **Extração Massiva (Ingestão):** O container Python, operando de forma isolada, executa spiders de alta performance. Ele lida com a limpeza de dados, normalização de strings e conversão de moedas antes de persistir o dado no MySQL.
-3.  **Análise e Motor de Regras (Intelligence):** O serviço em Ruby monitora o banco de dados em tempo real. Ele não apenas compara preços, mas calcula tendências e margens líquidas, disparando alertas apenas quando uma ação humana é realmente necessária.
-4.  **Interface Conversacional (IA):** O dashboard consome os insights do Ruby e, através de uma ponte API com modelos de linguagem (LLM), o Chatbot traduz tabelas complexas em sugestões verbais como: "Seu concorrente baixou o preço em 10%, mas sua margem permite cobrir a oferta com lucro de 5%. Deseja atualizar?".
+### 💡 O Diferencial da Engenharia Poliglota (Arquitetura de Alta Disponibilidade)
+O verdadeiro diferencial deste projeto não é o que ele faz, mas **como** ele foi construído. Fugimos da armadilha do "Monolito de Scripting" para adotar uma **Engenharia Heterogênea**. A maioria das soluções de mercado falha na escalabilidade porque tentam processar dados massivos em linguagens de alto nível que sofrem com gargalos de memória ou CPU.
 
-### 🧠 Por que cada linguagem para cada ação? (Justificativa Técnica)
-*   **Python (A Força Bruta):** Python é a linguagem soberana para Web Scraping. O uso do framework **Scrapy** permite o tratamento de requisições assíncronas, gerenciamento de proxies e contorno de sistemas anti-bot que seriam extremamente complexos de implementar em outras linguagens.
-*   **Ruby (A Lógica Elegante):** Ruby foi escolhido para o motor de regras devido à sua filosofia de "felicidade do desenvolvedor" e expressividade. Em sistemas de decisão, onde as regras de negócio mudam constantemente, a facilidade de leitura e manutenção do Ruby (Domain Specific Languages - DSLs) é um ativo inestimável.
-*   **PHP / Laravel (O Comando Central):** Para o front-end e gestão de estado, o Laravel oferece o ecossistema mais completo do mercado. Sua segurança robusta, sistema de filas (Queues) e a facilidade de integrar o Vue.js via Vite tornam-no a escolha lógica para um painel administrativo que precisa ser rápido e seguro.
+*   **Especialização de Runtime:** Utilizamos o **Python** exclusivamente para o que ele é imbatível: o ecossistema de bibliotecas de rede e navegação web (Scrapy).
+*   **Computação de Baixo Nível:** Introduzimos o **Mojo** para atuar onde o Python falha. O Mojo permite o acesso ao poder do hardware (vetorização e paralelismo) sem a complexidade do C++, garantindo limpeza de dados em tempo real.
+*   **Abstração de Negócio:** Reservamos o **Ruby** para a lógica financeira. A expressividade do Ruby permite criar uma DSL (*Domain Specific Language*) para regras de preço, tornando o sistema adaptável em minutos.
+*   **Sólida Interface de Gestão:** O **Laravel** fecha o ciclo provendo uma base de segurança corporativa, gestão de filas e persistência de dados madura.
 
-### 📑 Conceitos Aplicados de Engenharia
-*   **Conteinerização Multi-Stage:** Uso de Docker para isolar dependências conflitantes (como drivers do Chrome para Python vs drivers de DB para Ruby).
-*   **Interoperabilidade de Dados:** Comunicação eficiente entre serviços independentes via camada de persistência compartilhada.
-*   **Agentic Thinking:** Design de IA que não apenas responde perguntas, mas analisa o contexto do banco de dados para sugerir ações.
-*   **DevOps Culture:** Automação de ambiente completa, permitindo que o projeto seja clonado e rodado com um único comando (`docker-compose up`).
+### 🛠 Anatomia do Fluxo de Dados (A Pipeline de Inteligência)
+O fluxo segue o princípio de **ETL Reativo (Extract, Transform, Load)**, operando em microserviços orquestrados por Docker:
+
+1.  **Camada de Ingestão (Python/Scrapy):** Spiders assíncronas extraem dados não estruturados lidando com rotação de proxies e parsing de DOM complexos para gerar JSONs estruturados.
+2.  **Camada de Refino Térmico (Mojo):** O dado bruto é injetado no motor Mojo para operações de *Type-Safety* e *Data Normalization* em nível de memória, preparando datasets sem travar o sistema.
+3.  **Camada de Persistência e Estado (MySQL/Laravel):** Dados refinados são persistidos em esquema relacional otimizado, onde o Laravel monitora mudanças e gerencia o histórico temporal (*Time Series*).
+4.  **Camada de Inteligência de Negócio (Ruby Engine):** O Ruby executa o motor de regras financeiras, comparando preços de mercado com custos e estoque para gerar Oportunidades Comerciais.
+5.  **Camada de Entrega e Agente de IA (OpenAI/Vue.js):** O dado vira linguagem natural. A API da OpenAI processa o contexto e apresenta uma análise cognitiva: "Detectamos uma queda no concorrente A. Deseja aplicar o ajuste?".
 
 ---
 
 ## 🇺🇸 English (EN-US)
 
-### 🎯 Why does this project exist? (Mission and Vision)
-In today's digital market, price volatility is extreme. Companies relying on manual monitoring suffer from "commercial myopia": by the time they notice a competitor's move, the sales opportunity has already vanished. **FluxoScrape** was designed to be an **Automatic Competitive Intelligence** solution. The primary goal is to close the gap between raw data collection and strategic decision-making, using a technological ecosystem that ensures no information is lost and every insight is delivered in a digestible format to the end user through Generative AI.
+### 🎯 Why does this project exist? (The Crisis of Reactivity)
+In the modern e-commerce landscape, information has an extremely short shelf life. **FluxoScrape** was born as a response to the **Commercial Reactivity Crisis**. 
 
-### 💡 Why is it interesting? (Strategic Differentials)
-The project's key differentiator lies in its **Polyglot Microservices Architecture**. While most developers try to force a single language to perform all tasks — often sacrificing performance or scalability — FluxoScrape respects the specialties of each stack. Furthermore, the implementation of a **Consultative AI Bot** in the front-end elevates the project from a simple automation script to a shelf-ready product (SaaS), where complex technology is hidden behind an intuitive and powerful conversational interface.
+Traditionally, companies monitor competitors passively. By the time a manager notices a price gap, thousands of conversions are already lost. There is a "decision vacuum" between the fact and the action. This project exists to **annihilate this latency**. It transforms monitoring into a Continuous Flow Intelligence cycle, allowing technology to handle the heavy lifting of mining and calculation, leaving only the final strategic decision to the human element.
 
-### 🛠 How the project works (Deep Data Flow)
-The data flow is structured in a robust four-stage pipeline:
-1.  **Orchestration and Input:** Through the Dashboard built in Laravel 11, the user manages inventory and sets critical parameters such as SKUs, tracking URLs, and profitability thresholds.
-2.  **Massive Extraction (Ingestion):** The Python container, operating in isolation, executes high-performance spiders. It handles data cleaning, string normalization, and currency conversion before persisting the data to MySQL.
-3.  **Analysis and Rules Engine (Intelligence):** The Ruby service monitors the database in real-time. It doesn't just compare prices; it calculates trends and net margins, triggering alerts only when human action is truly necessary.
-4.  **Conversational Interface (AI):** The dashboard consumes Ruby's insights and, through an API bridge with Large Language Models (LLM), the Chatbot translates complex tables into verbal suggestions like: "Your competitor dropped their price by 10%, but your margin allows you to match it with a 5% profit. Would you like to update?".
+### 💡 Strategic Polyglot Architecture (High Availability)
+The true differentiator of this project is not what it does, but **how** it was built. We avoid the "Scripting Monolith" trap by adopting **Heterogeneous Engineering**. Most market solutions fail to scale because they attempt to process massive data in high-level languages that suffer from memory or CPU bottlenecks.
 
-### 🧠 Why each language for each action? (Technical Justification)
-*   **Python (The Brute Force):** Python is the sovereign language for Web Scraping. Using the **Scrapy** framework allows for handling asynchronous requests, proxy management, and bypassing anti-bot systems that would be extremely complex to implement in other languages.
-*   **Ruby (The Elegant Logic):** Ruby was chosen for the rules engine due to its "developer happiness" philosophy and expressiveness. In decision systems where business rules change constantly, Ruby's readability and ease of maintenance (Domain Specific Languages - DSLs) are invaluable assets.
-*   **PHP / Laravel (The Central Command):** For the front-end and state management, Laravel offers the most complete ecosystem on the market. Its robust security, task queuing system, and ease of integrating Vue.js via Vite make it the logical choice for an admin panel that needs to be fast and secure.
+*   **Runtime Specialization:** We use **Python** for what it does best: the ecosystem of network libraries and web navigation (Scrapy).
+*   **Low-Level Computing:** We introduced **Mojo** to step in where Python fails. Mojo allows access to hardware power (vectorization and parallelism) without C++ complexity, ensuring real-time data cleaning.
+*   **Business Abstraction:** **Ruby** is reserved for financial logic. Ruby's expressiveness allows for the creation of a DSL (*Domain Specific Language*) for pricing rules, making the system adaptable in minutes.
+*   **Management Interface:** **Laravel** provides the corporate security base, queue management, and mature data persistence.
 
-### 📑 Applied Engineering Concepts
-*   **Multi-Stage Containerization:** Use of Docker to isolate conflicting dependencies (such as Chrome drivers for Python vs DB drivers for Ruby).
-*   **Data Interoperability:** Efficient communication between independent services via a shared persistence layer.
-*   **Agentic Thinking:** AI design that doesn't just answer questions but analyzes database context to suggest actions.
-*   **DevOps Culture:** Complete environment automation, allowing the project to be cloned and run with a single command (`docker-compose up`).
+### 🛠 Detailed Data Flow (The Intelligence Pipeline)
+The data flow follows the **Reactive ETL (Extract, Transform, Load)** principle, operating in microservices orchestrated by Docker:
+
+1.  **Ingestion Layer (Python/Scrapy):** Asynchronous spiders extract unstructured data, handling proxy rotation and complex DOM parsing to generate structured JSON.
+2.  **Thermal Refinement Layer (Mojo):** Raw data is injected into the Mojo engine for memory-level **Type-Safety** and **Data Normalization**, preparing datasets without locking the system.
+3.  **Persistence & State Layer (MySQL/Laravel):** Refined data is persisted in an optimized relational schema, where Laravel monitors changes and manages time-series history.
+4.  **Business Intelligence Layer (Ruby Engine):** Ruby executes the financial rules engine, comparing market prices with costs and inventory to generate Commercial Opportunities.
+5.  **AI Consultative Layer (OpenAI/Vue.js):** Data turns into natural language. The OpenAI API processes the context and presents a cognitive analysis: "We detected a drop in competitor A. Would you like to apply the adjustment?".
 
 ---
+
+### (PT-BR)  Por que cada linguagem para cada ação? (Arquitetura Profunda)
+
+#### 🐍 Python 3.12 (A Camada de Interação com o DOM)
+O Python não foi escolhido por sua velocidade, mas por seu ecossistema de rede. A camada de raspagem exige resiliência contra bloqueios.
+*   **Como age:** O container Python utiliza o framework Scrapy e bibliotecas de processamento de sinais para simular o comportamento humano. Ele gerencia o ciclo de vida das requisições HTTP, rotaciona cabeçalhos (User-Agents) e resolve desafios de renderização via middleware.
+*   **Responsabilidade:** Navegar pela estrutura de árvore do HTML (DOM), extrair seletores CSS/XPath e converter o caos visual da web em dicionários de dados brutos e estruturados.
+
+#### 🔥 Mojo (O Motor de Computação e Vetorização)
+Aqui o projeto atinge performance de nível de sistema. O Mojo entra para resolver o gargalo de processamento que o Python criaria ao lidar com milhões de pontos de dados.
+*   **Como age:** O Mojo utiliza SIMD (Single Instruction, Multiple Data) para processar vetores de dados simultaneamente. Ele age diretamente na memória do container, realizando a normalização de strings, sanitização de caracteres especiais e cálculos de conversão de câmbio em nanosegundos.
+*   **Responsabilidade:** Atuar como um filtro de alta vazão. Ele recebe o "entulho" de dados do Python e entrega um dataset limpo e tipado para o banco de dados, garantindo que a CPU não seja sobrecarregada por loops lentos.
+
+#### 💎 Ruby 3.3 (A Máquina de Estado e Regras de Negócio)
+O Ruby é a linguagem da expressividade. Em sistemas de precificação, as regras de negócio mudam conforme a estratégia de marketing.
+*   **Como age:** O Ruby consome os dados persistidos e os passa por um motor de lógica (Rules Engine). Graças à sua natureza altamente dinâmica, ele permite definir algoritmos complexos — como o "Price Elasticity" — de forma quase verbal. Ele age comparando o delta de preços entre o passado e o presente.
+*   **Responsabilidade:** Inteligência lógica. Ele decide se uma alteração de preço é uma anomalia (erro do concorrente) ou uma tendência real de mercado, gerando o sinal que alimentará a IA.
+
+#### 🐘 PHP 8.3 / Laravel 11 (O Orquestrador de Infraestrutura)
+O Laravel não é apenas o "site", é o Control Plane do ecossistema.
+*   **Como age:** O Laravel gerencia os Jobs e Queues (filas de trabalho). Ele coordena quando os scrapers devem rodar, garante a segurança da API que se comunica com a OpenAI e mantém a integridade das sessões dos usuários. Através do Eloquent ORM, ele abstrai a complexidade do banco de dados MySQL para os outros containers.
+*   **Responsabilidade:** Interface administrativa, segurança, gestão de tarefas agendadas e integração com o frontend Vue.js para o Chatbot de IA.
+
+---
+###  (EN-US) Why each language for each action? (Deep Architecture)
+
+#### 🐍 Python 3.12 (DOM Interaction Layer)
+Python was not chosen for speed, but for its networking ecosystem. The scraping layer requires resilience against bot detection.
+*   **How it acts:** The Python container uses the Scrapy framework to simulate human behavior. It manages the HTTP request lifecycle, rotates headers (User-Agents), and solves rendering challenges via specialized middleware.
+*   **Responsibility:** Navigating the HTML tree structure (DOM), extracting CSS/XPath selectors, and converting web chaos into structured raw data dictionaries.
+
+#### 🔥 Mojo (Computation and Vectorization Engine)
+This is where the project reaches system-level performance. Mojo is introduced to solve the processing bottleneck that Python would create when dealing with millions of data points.
+*   **How it acts:** Mojo utilizes SIMD (Single Instruction, Multiple Data) to process data vectors simultaneously. It acts directly on the container’s memory, performing string normalization, sanitization, and currency conversion calculations in nanoseconds.
+*   **Responsibility:** Acting as a high-throughput filter. It receives the data "debris" from Python and delivers a clean, typed dataset to the database, ensuring the CPU is not bogged down by slow loops.
+
+#### 💎 Ruby 3.3 (State Machine and Business Rules)
+Ruby is the language of expressiveness. In pricing systems, business rules shift according to marketing strategies.
+*   **How it acts:** Ruby consumes the persisted data and passes it through a Rules Engine. Thanks to its highly dynamic nature, it allows for defining complex algorithms — such as Price Elasticity — in a near-verbal way. It calculates the price delta between past and present values.
+*   **Responsibility:** Logical intelligence. It decides if a price change is an anomaly (competitor error) or a real market trend, generating the signal that feeds the AI.
+
+#### 🐘 PHP 8.3 / Laravel 11 (Infrastructure Orchestrator)
+Laravel is not just the "website"; it is the Control Plane of the ecosystem.
+*   **How it acts:** Laravel manages Jobs and Queues. It coordinates when scrapers should run, secures the API communication with OpenAI, and maintains user session integrity. Through Eloquent ORM, it abstracts the MySQL database complexity for the other containers.
+*   **Responsibility:** Admin interface, security, scheduled task management, and Vue.js frontend integration for the AI Chatbot.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 📁 Estrutura de Pastas / Project Structure
 ```text
@@ -74,7 +132,12 @@ PROJETOFLUXOSCRAPE/
 ├── .docker/                # Infrastructure blueprints (Dockerfiles)
 │   ├── php/                # PHP 8.3 & Apache environment
 │   ├── python/             # Python 3.12 & Scraping tools
-│   └── ruby/               # Ruby 3.3 & Logic Engine environment
+│   ├── ruby/               # Ruby 3.3 & Logic Engine environment
+│   └── mojo/               # Mojo SDK & Performance environment
+│
+├── core-mojo/              # High-Performance Engine (Mojo)
+│   ├── src/                # Heavy data processing logic
+│   └── main.mojo           # Entry point for fast computation
 │
 ├── dashboard-php/          # Control Center (Laravel 11)
 │   ├── app/                # Business Logic & AI Bridges
@@ -86,10 +149,9 @@ PROJETOFLUXOSCRAPE/
 │   └── processor.rb        # Background worker for data analysis
 │
 ├── scraper-python/         # Data Harvesters (Python 3.12)
-│   ├── spiders/            # Scrapy bots for different targets
-│   ├── services/           # DB Connectors & Cleaners
-│   └── main.py             # Execution Orchestrator
+│   ├── spiders/            # Scrapy bots
+│   └── main.py             # Orchestrator
 │
-├── .env                    # Environment variables (API Keys, DB Credentials)
+├── .env                    # API Keys & DB Credentials
 ├── docker-compose.yml      # The "Master Key" orchestrating the stack
-└── README.md               # Documentation and technical overview
+└── README.md               # Documentation
