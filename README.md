@@ -1,4 +1,4 @@
-# 🚀 FluxoScrape: Polyglot Intelligence Ecosystem
+#  FluxoScrape: Polyglot Intelligence Ecosystem
 
 ![License](https://img.shields.io/github/license/seu-usuario/projetofluxoscrape?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
