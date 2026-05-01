@@ -14,12 +14,12 @@
 
 ## 🇧🇷 Português (PT-BR)
 
-### 🎯 Por que este projeto existe? (A Crise da Reatividade e a Solução Preditiva)
+###  Por que este projeto existe? (A Crise da Reatividade e a Solução Preditiva)
 No ecossistema de e-commerce moderno, a informação tem um prazo de validade extremamente curto. O projeto **FluxoScrape** não nasceu apenas como uma ferramenta de automação, mas como uma resposta à **Crise da Reatividade Comercial**. 
 
 Tradicionalmente, empresas monitoram concorrentes de forma passiva ou através de ferramentas que entregam relatórios estáticos. Quando um gestor recebe um alerta de que seu preço está 15% acima do mercado, ele já perdeu milhares de conversões nas últimas horas. Existe um "vácuo de decisão" entre o fato (a mudança de preço do concorrente) e a ação (o ajuste no seu dashboard). Este projeto existe para **aniquilar essa latência**. Ele transforma o processo de monitoramento em um ciclo de Inteligência de Fluxo Contínuo, permitindo que a tecnologia tome o trabalho pesado de mineração e cálculo, deixando para o humano apenas a decisão final estratégica.
 
-### 💡 O Diferencial da Engenharia Poliglota (Arquitetura de Alta Disponibilidade)
+###  O Diferencial da Engenharia Poliglota (Arquitetura de Alta Disponibilidade)
 O verdadeiro diferencial deste projeto não é o que ele faz, mas **como** ele foi construído. Fugimos da armadilha do "Monolito de Scripting" para adotar uma **Engenharia Heterogênea**. A maioria das soluções de mercado falha na escalabilidade porque tentam processar dados massivos em linguagens de alto nível que sofrem com gargalos de memória ou CPU.
 
 *   **Especialização de Runtime:** Utilizamos o **Python** exclusivamente para o que ele é imbatível: o ecossistema de bibliotecas de rede e navegação web (Scrapy).
@@ -27,7 +27,7 @@ O verdadeiro diferencial deste projeto não é o que ele faz, mas **como** ele f
 *   **Abstração de Negócio:** Reservamos o **Ruby** para a lógica financeira. A expressividade do Ruby permite criar uma DSL (*Domain Specific Language*) para regras de preço, tornando o sistema adaptável em minutos.
 *   **Sólida Interface de Gestão:** O **Laravel** fecha o ciclo provendo uma base de segurança corporativa, gestão de filas e persistência de dados madura.
 
-### 🛠 Anatomia do Fluxo de Dados (A Pipeline de Inteligência)
+###  Anatomia do Fluxo de Dados (A Pipeline de Inteligência)
 O fluxo segue o princípio de **ETL Reativo (Extract, Transform, Load)**, operando em microserviços orquestrados por Docker:
 
 1.  **Camada de Ingestão (Python/Scrapy):** Spiders assíncronas extraem dados não estruturados lidando com rotação de proxies e parsing de DOM complexos para gerar JSONs estruturados.
@@ -40,12 +40,12 @@ O fluxo segue o princípio de **ETL Reativo (Extract, Transform, Load)**, operan
 
 ## 🇺🇸 English (EN-US)
 
-### 🎯 Why does this project exist? (The Crisis of Reactivity)
+###  Why does this project exist? (The Crisis of Reactivity)
 In the modern e-commerce landscape, information has an extremely short shelf life. **FluxoScrape** was born as a response to the **Commercial Reactivity Crisis**. 
 
 Traditionally, companies monitor competitors passively. By the time a manager notices a price gap, thousands of conversions are already lost. There is a "decision vacuum" between the fact and the action. This project exists to **annihilate this latency**. It transforms monitoring into a Continuous Flow Intelligence cycle, allowing technology to handle the heavy lifting of mining and calculation, leaving only the final strategic decision to the human element.
 
-### 💡 Strategic Polyglot Architecture (High Availability)
+###  Strategic Polyglot Architecture (High Availability)
 The true differentiator of this project is not what it does, but **how** it was built. We avoid the "Scripting Monolith" trap by adopting **Heterogeneous Engineering**. Most market solutions fail to scale because they attempt to process massive data in high-level languages that suffer from memory or CPU bottlenecks.
 
 *   **Runtime Specialization:** We use **Python** for what it does best: the ecosystem of network libraries and web navigation (Scrapy).
@@ -53,7 +53,7 @@ The true differentiator of this project is not what it does, but **how** it was 
 *   **Business Abstraction:** **Ruby** is reserved for financial logic. Ruby's expressiveness allows for the creation of a DSL (*Domain Specific Language*) for pricing rules, making the system adaptable in minutes.
 *   **Management Interface:** **Laravel** provides the corporate security base, queue management, and mature data persistence.
 
-### 🛠 Detailed Data Flow (The Intelligence Pipeline)
+### Detailed Data Flow (The Intelligence Pipeline)
 The data flow follows the **Reactive ETL (Extract, Transform, Load)** principle, operating in microservices orchestrated by Docker:
 
 1.  **Ingestion Layer (Python/Scrapy):** Asynchronous spiders extract unstructured data, handling proxy rotation and complex DOM parsing to generate structured JSON.
@@ -110,19 +110,6 @@ Laravel is not just the "website"; it is the Control Plane of the ecosystem.
 *   **Responsibility:** Admin interface, security, scheduled task management, and Vue.js frontend integration for the AI Chatbot.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## 📁 Estrutura de Pastas / Project Structure
