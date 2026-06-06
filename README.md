@@ -64,6 +64,51 @@ The system avoids the "scripting monolith" trap. It uses an **Event-Driven Polyg
 
 ---
 
+---
+
+## 🐍 Ouroboros: Autonomous Immune System & Resilience Fuzzer
+## [PT-BR] Sistema Imunológico Autônomo e Fuzzer de Resiliência
+## [EN-US] Autonomous Immune System & Resilience Fuzzer
+
+### 🧠 The Concept: Adversarial Self-Evolution / O Conceito: Autoevolução Adversarial
+
+**[PT-BR]** O módulo Ouroboros transforma a infraestrutura do KnotPay de um motor de execução estático em um **organismo autônomo e autoevolutivo**. Em ambientes de alta frequência, a segurança tradicional (firewalls, WAFs) é inerentemente lenta, pois depende de assinaturas de ataques conhecidos. O Ouroboros opera com base na **causalidade comportamental**. Ele trata todo o pipeline do KnotPay — dos scrapers em Python até o core financeiro em Java — como um laboratório controlado. Ao simular ataques adversários contra sua própria lógica interna de forma contínua, o Ouroboros identifica vulnerabilidades de dia zero (0-days) antes que qualquer agente externo as descubra.
+
+**[EN-US]** The Ouroboros module transforms the KnotPay infrastructure from a static execution engine into a **self-evolving, autonomous organism**. In high-frequency environments, traditional security (firewalls, WAFs) is inherently slow, as it relies on known attack signatures. Ouroboros operates based on **behavioral causality**. It treats the entire KnotPay pipeline—from the Python scrapers to the Java financial core—as a controlled laboratory. By continuously simulating adversarial attacks against its own internal logic, Ouroboros identifies zero-day vulnerabilities before any external agent can discover them.
+
+---
+
+### 🪢 The Philosophy of the Name: The Infinite Loop / A Filosofia do Nome: O Ciclo Infinito
+
+**[PT-BR]** O nome "Ouroboros" — o antigo símbolo da serpente que devora a própria cauda — foi escolhido para representar o **Ciclo de Feedback de Defesa Perfeito**:
+1. **O Crescimento através do Consumo Próprio:** Assim como a serpente se sustenta consumindo o próprio corpo, o Ouroboros sustenta a integridade do KnotPay ao consumir seus próprios dados de produção. O sistema realimenta constantemente o tráfego do mundo real no fuzzer para estressar a lógica do sistema.
+2. **O Ciclo Eterno:** A segurança não é um estado, mas um processo. Ao "devorar" constantemente seus próprios outputs e testá-los contra condições de contorno (boundary conditions), o sistema garante nunca ser estático. É um loop de melhoria infinita onde o sistema efetivamente "renasce" mais forte após cada teste bem-sucedido.
+3. **O Fechamento do Nó:** Em engenharia mecânica, um nó é tão forte quanto seu ponto mais teso. O Ouroboros atua como o mecanismo que tensiona o nó ao limite, garantindo que não exista nenhuma "folga" na transição de dados para capital.
+
+**[EN-US]** The name "Ouroboros"—the ancient symbol of a serpent devouring its own tail—was chosen to represent the **Perfect Defensive Feedback Loop**:
+1. **Growth through Self-Consumption:** Just as the serpent sustains itself by consuming its own body, Ouroboros sustains the integrity of KnotPay by consuming its own production data. It continuously feeds real-world traffic back into the fuzzer to stress-test the system’s logic.
+2. **The Eternal Cycle:** Security is not a state, but a process. By constantly "devouring" its own outputs and testing them against boundary conditions, the system ensures it is never static. It is a loop of infinite improvement where the system effectively "re-births" itself stronger after every successful test.
+3. **The Closing of the Knot:** In mechanical engineering, a knot is only as strong as its tightest point. Ouroboros acts as the mechanism that pulls the knot tight, ensuring no "slack" exists in the data-to-capital transition.
+
+---
+
+### ⚙️ How It Works Within KnotPay / Como funciona dentro do KnotPay
+
+**[PT-BR]** A integração do Ouroboros na linha de montagem do KnotPay funciona como uma resposta imunológica ativa:
+* **1. Ingestão de Contexto:** O Ouroboros espelha o fluxo de dados, aprendendo a "gramática" e a estrutura esperada de cada protocolo.
+* **2. Mutação em Memória (Mojo Core):** Utilizando a performance de baixo nível do Mojo, o módulo aplica mutações matemáticas de alta velocidade (bit-flipping, integer overflows, testes de limites) nos pacotes antes que eles alcancem a lógica de negócio.
+* **3. Triagem por IA:** Um agente de Aprendizado por Reforço (Reinforcement Learning) observa a Máquina de Estados (FSM). Se detectar um "Estado Ilegal" — onde o sistema se comporta de forma inesperada — ele mapeia a sequência exata de entrada que causou a anomalia.
+* **4. Vacinação Automatizada:** Em vez de apenas registrar o erro, o Ouroboros gera uma "Vacina" estrutural. Este filtro compilado é injetado na Camada de Ingestão, garantindo que aquele vetor de ataque — e suas variantes lógicas — seja descartado na borda (hardware level) antes de tocar no core.
+
+**[EN-US]** The integration of Ouroboros into the KnotPay assembly line functions as an active immune response:
+* **1. Ingestion of Context:** Ouroboros mirrors the incoming data stream, learning the exact "grammar" and expected structure of every protocol.
+* **2. In-Memory Mutation (Mojo Core):** Utilizing Mojo's low-level performance, the module applies high-velocity mathematical mutations (bit-flipping, integer overflows, boundary testing) to packets before they reach the business logic.
+* **3. AI-Driven Triaging:** An asynchronous Reinforcement Learning agent observes the system's Finite State Machine (FSM). If it detects an "Illegal State"—where the system behaves unexpectedly—it tags the exact input sequence that caused it.
+* **4. Automated Vaccination:** Instead of simply logging the error, Ouroboros generates a structural "Vaccine." This compiled filter is injected into the Ingestion Layer, ensuring that this specific attack vector—and all logically similar variants—is discarded at the hardware boundary level.
+
+---
+
+
 ## 📁 Estrutura de Engenharia / Repository Blueprint
 
 ```text
