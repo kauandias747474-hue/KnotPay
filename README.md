@@ -1,144 +1,95 @@
-#  FluxoScrape: Polyglot Intelligence Ecosystem
+# 🪢 KnotPay: Autonomous Ingestion & Atomic Execution Engine
 
-
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Mojo](https://img.shields.io/badge/Mojo-white?style=for-the-badge&logo=mojo&logoColor=FF4B12)
-![Ruby](https://img.shields.io/badge/Ruby-3.3-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-24.0-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-IA-412991?style=for-the-badge&logo=openai&logoColor=white)
+[🇧🇷 Português (PT-BR)](#-português-pt-br) | [🇺🇸 English (EN-US)](#-english-en-us)
 
 ---
 
 ## 🇧🇷 Português (PT-BR)
 
-###  Por que este projeto existe? (A Crise da Reatividade e a Solução Preditiva)
-No ecossistema de e-commerce moderno, a informação tem um prazo de validade extremamente curto. O projeto **FluxoScrape** não nasceu apenas como uma ferramenta de automação, mas como uma resposta à **Crise da Reatividade Comercial**. 
+### 🎯 O Conceito: A Aniquilação do Vácuo de Decisão
+No ecossistema moderno de e-commerce, arbitragem de ativos digitais e compras industriais (procurement), a informação tem um prazo de validade medido em milissegundos. Tradicionalmente, as empresas operam com "vácuos de decisão": ferramentas monitoram o mercado e geram alertas em dashboards para que um humano, eventualmente, tome a decisão de compra. Até que o clique ocorra, a oportunidade já desapareceu ou o preço foi corrigido.
 
-Tradicionalmente, empresas monitoram concorrentes de forma passiva ou através de ferramentas que entregam relatórios estáticos. Quando um gestor recebe um alerta de que seu preço está 15% acima do mercado, ele já perdeu milhares de conversões nas últimas horas. Existe um "vácuo de decisão" entre o fato (a mudança de preço do concorrente) e a ação (o ajuste no seu dashboard). Este projeto existe para **aniquilar essa latência**. Ele transforma o processo de monitoramento em um ciclo de Inteligência de Fluxo Contínuo, permitindo que a tecnologia tome o trabalho pesado de mineração e cálculo, deixando para o humano apenas a decisão final estratégica.
+O **KnotPay** não é um sistema de monitoramento passivo. É um **Motor Autônomo de Arbitragem e Execução Financeira de Consistência Forte**. Ele funde duas disciplinas de engenharia distintas: a hiper-reatividade da extração de dados poliglota (para mapear a web em tempo real) e a hiper-segurança de um motor financeiro transacional (para executar pagamentos sem risco). O sistema lê o mercado, valida a margem de lucro e liquida a transação de forma atômica, sem qualquer intervenção humana.
 
-###  O Diferencial da Engenharia Poliglota (Arquitetura de Alta Disponibilidade)
-O verdadeiro diferencial deste projeto não é o que ele faz, mas **como** ele foi construído. Fugimos da armadilha do "Monolito de Scripting" para adotar uma **Engenharia Heterogênea**. A maioria das soluções de mercado falha na escalabilidade porque tentam processar dados massivos em linguagens de alto nível que sofrem com gargalos de memória ou CPU.
+### 🪢 Por que o nome "KnotPay"?
+Em sistemas distribuídos e engenharia mecânica, o maior desafio é amarrar pontas soltas. O **"Knot" (Nó)** representa o ponto físico exato onde duas forças massivas se encontram e são travadas com força máxima, sem folgas.
 
-*   **Especialização de Runtime:** Utilizamos o **Python** exclusivamente para o que ele é imbatível: o ecossistema de bibliotecas de rede e navegação web (Scrapy).
-*   **Computação de Baixo Nível:** Introduzimos o **Mojo** para atuar onde o Python falha. O Mojo permite o acesso ao poder do hardware (vetorização e paralelismo) sem a complexidade do C++, garantindo limpeza de dados em tempo real.
-*   **Abstração de Negócio:** Reservamos o **Ruby** para a lógica financeira. A expressividade do Ruby permite criar uma DSL (*Domain Specific Language*) para regras de preço, tornando o sistema adaptável em minutos.
-*   **Sólida Interface de Gestão:** O **Laravel** fecha o ciclo provendo uma base de segurança corporativa, gestão de filas e persistência de dados madura.
+De um lado, temos o fluxo caótico, bruto e de altíssima velocidade da extração de dados web. Do outro lado, temos a rigidez intransponível e a consistência matemática do livro contábil bancário. O KnotPay é o "nó" que amarra a inteligência de dados à execução de capital. É o ponto onde a informação vira dinheiro líquido, garantindo que o laço nunca se desfaça por falhas de rede ou concorrência.
 
-###  Anatomia do Fluxo de Dados (A Pipeline de Inteligência)
-O fluxo segue o princípio de **ETL Reativo (Extract, Transform, Load)**, operando em microserviços orquestrados por Docker:
+### ⚙️ Como Tudo Funciona (A Linha de Montagem Tecnológica)
+O sistema evita o erro comum do "monolito de scripting". Ele utiliza uma **Arquitetura Poliglota Orientada a Eventos**, onde cada linguagem resolve exclusivamente o problema para o qual foi projetada.
 
-1.  **Camada de Ingestão (Python/Scrapy):** Spiders assíncronas extraem dados não estruturados lidando com rotação de proxies e parsing de DOM complexos para gerar JSONs estruturados.
-2.  **Camada de Refino Térmico (Mojo):** O dado bruto é injetado no motor Mojo para operações de *Type-Safety* e *Data Normalization* em nível de memória, preparando datasets sem travar o sistema.
-3.  **Camada de Persistência e Estado (MySQL/Laravel):** Dados refinados são persistidos em esquema relacional otimizado, onde o Laravel monitora mudanças e gerencia o histórico temporal (*Time Series*).
-4.  **Camada de Inteligência de Negócio (Ruby Engine):** O Ruby executa o motor de regras financeiras, comparando preços de mercado com custos e estoque para gerar Oportunidades Comerciais.
-5.  **Camada de Entrega e Agente de IA (OpenAI/Vue.js):** O dado vira linguagem natural. A API da OpenAI processa o contexto e apresenta uma análise cognitiva: "Detectamos uma queda no concorrente A. Deseja aplicar o ajuste?".
+*   **Estágio 1: Ingestão e Radar (Python 3.12):** Utilizamos o ecossistema assíncrono do Python (Scrapy) para gerenciar o ciclo de vida HTTP. Spiders operam 24/7 rotacionando proxies e extraindo dados brutos de concorrentes e fornecedores.
+*   **Estágio 2: Refino Térmico e Vetorização (Mojo):** O dado bruto é injetado diretamente em containers rodando **Mojo**. Usando paralelismo e processamento vetorial (SIMD) de baixo nível, o Mojo limpa impurezas de caracteres, converte moedas e tipifica o dataset na memória em nanosegundos.
+*   **Estágio 3: O Cérebro de Risco (Ruby 3.3):** O dataset limpo passa por uma DSL em Ruby. O motor de regras de negócio analisa a oportunidade. Se a margem de revenda for positiva, o Ruby gera o "Sinal de Compra".
+*   **Estágio 4: O Orquestrador e o Despacho (PHP 8.3 / Laravel 11):** O Laravel atua como o *Control Plane*, auditando a decisão e publicando um evento em uma fila de alta velocidade com uma **Chave de Idempotência** rigorosa.
+*   **Estágio 5: O Músculo Financeiro Atômico (Java 21 & PostgreSQL):** O motor financeiro intercepta o evento, ativa uma Máquina de Estados Finita (FSM) e aplica um **Lock Pessimista (`SELECT FOR UPDATE`)** direto no banco de dados. A transação é travada de forma ACID; se a requisição for duplicada, a chave de idempotência a descarta, e se o saldo for insuficiente, as *Check Constraints* do disco abortam a operação.
 
 ---
 
 ## 🇺🇸 English (EN-US)
 
-###  Why does this project exist? (The Crisis of Reactivity)
-In the modern e-commerce landscape, information has an extremely short shelf life. **FluxoScrape** was born as a response to the **Commercial Reactivity Crisis**. 
+### 🎯 The Concept: The Annihilation of the Decision Vacuum
+In high-frequency markets—whether it's e-commerce, asset arbitrage, or industrial procurement—the delay between discovering an opportunity and settling the payment is the vacuum where millions are lost. **KnotPay** obliterates this decision latency.
 
-Traditionally, companies monitor competitors passively. By the time a manager notices a price gap, thousands of conversions are already lost. There is a "decision vacuum" between the fact and the action. This project exists to **annihilate this latency**. It transforms monitoring into a Continuous Flow Intelligence cycle, allowing technology to handle the heavy lifting of mining and calculation, leaving only the final strategic decision to the human element.
+This is not a passive monitoring dashboard or an alert bot. KnotPay is a proprietary autonomous execution infrastructure. The system sweeps the web in milliseconds, sanitizes and validates data profitability through a high-performance polyglot pipeline, and triggers financial liquidation atomically—guaranteeing strong consistency (ACID) and zero risk of double-spending or duplicate orders.
 
-###  Strategic Polyglot Architecture (High Availability)
-The true differentiator of this project is not what it does, but **how** it was built. We avoid the "Scripting Monolith" trap by adopting **Heterogeneous Engineering**. Most market solutions fail to scale because they attempt to process massive data in high-level languages that suffer from memory or CPU bottlenecks.
+### 🪢 Why the name "KnotPay"?
+In distributed systems and mechanical engineering, the greatest challenge is tying up loose ends. The **"Knot"** represents the exact physical point where two massive forces meet and are locked together with maximum strength, leaving no slack.
 
-*   **Runtime Specialization:** We use **Python** for what it does best: the ecosystem of network libraries and web navigation (Scrapy).
-*   **Low-Level Computing:** We introduced **Mojo** to step in where Python fails. Mojo allows access to hardware power (vectorization and parallelism) without C++ complexity, ensuring real-time data cleaning.
-*   **Business Abstraction:** **Ruby** is reserved for financial logic. Ruby's expressiveness allows for the creation of a DSL (*Domain Specific Language*) for pricing rules, making the system adaptable in minutes.
-*   **Management Interface:** **Laravel** provides the corporate security base, queue management, and mature data persistence.
+On one side, we have the chaotic, brute-force, high-velocity stream of web data extraction. On the other side, we have the impenetrable rigidity and mathematical consistency of the banking ledger. KnotPay is the "knot" that ties data intelligence to capital execution. It is the point where information turns into liquid money, ensuring the loop never unravels due to network failures or concurrency race conditions.
 
-### Detailed Data Flow (The Intelligence Pipeline)
-The data flow follows the **Reactive ETL (Extract, Transform, Load)** principle, operating in microservices orchestrated by Docker:
+### ⚙️ How It Works (The Technological Assembly Line)
+The system avoids the "scripting monolith" trap. It uses an **Event-Driven Polyglot Architecture**, where each language exclusively solves the problem it was designed for.
 
-1.  **Ingestion Layer (Python/Scrapy):** Asynchronous spiders extract unstructured data, handling proxy rotation and complex DOM parsing to generate structured JSON.
-2.  **Thermal Refinement Layer (Mojo):** Raw data is injected into the Mojo engine for memory-level **Type-Safety** and **Data Normalization**, preparing datasets without locking the system.
-3.  **Persistence & State Layer (MySQL/Laravel):** Refined data is persisted in an optimized relational schema, where Laravel monitors changes and manages time-series history.
-4.  **Business Intelligence Layer (Ruby Engine):** Ruby executes the financial rules engine, comparing market prices with costs and inventory to generate Commercial Opportunities.
-5.  **AI Consultative Layer (OpenAI/Vue.js):** Data turns into natural language. The OpenAI API processes the context and presents a cognitive analysis: "We detected a drop in competitor A. Would you like to apply the adjustment?".
+*   **Stage 1: Ingestion and Radar (Python 3.12):** We utilize Python's asynchronous ecosystem (Scrapy) to manage the HTTP lifecycle. Spiders operate 24/7, rotating proxies and extracting raw data from competitors and suppliers.
+*   **Stage 2: Thermal Refinement and Vectorization (Mojo):** Raw data is injected directly into containers running **Mojo**. Leveraging advanced vector processing (SIMD), it sanitizes and types datasets in nanoseconds, shielding the CPU from slow bottlenecks.
+*   **Stage 3: The Risk Brain (Ruby 3.3):** The clean dataset passes through a Ruby DSL. The business rules engine analyzes the opportunity. If the resale margin is positive, the Ruby engine issues a "Buy Signal".
+*   **Stage 4: Orchestration and Dispatch (PHP 8.3 / Laravel 11):** Laravel acts as the *Control Plane*, auditing the purchasing decision and publishing an event to a high-speed message broker with a strict **Idempotency Key**.
+*   **Stage 5: The Atomic Financial Muscle (Java 21 & PostgreSQL):** The core financial engine intercepts the event, triggers a Finite State Machine (FSM), and forces a **Pessimistic Lock (`SELECT FOR UPDATE`)** on the database layer. The transaction is locked in an ACID-compliant manner; if the request is duplicated, the idempotency key discards it, and if check constraints fail at disk level, PostgreSQL forces an instant rollback.
 
 ---
 
-### (PT-BR)  Por que cada linguagem para cada ação? (Arquitetura Profunda)
+## 🛠️ Matriz de Especialização / Runtime Specialization Matrix
 
-#### 🐍 Python 3.12 (A Camada de Interação com o DOM)
-O Python não foi escolhido por sua velocidade, mas por seu ecossistema de rede. A camada de raspagem exige resiliência contra bloqueios.
-*   **Como age:** O container Python utiliza o framework Scrapy e bibliotecas de processamento de sinais para simular o comportamento humano. Ele gerencia o ciclo de vida das requisições HTTP, rotaciona cabeçalhos (User-Agents) e resolve desafios de renderização via middleware.
-*   **Responsabilidade:** Navegar pela estrutura de árvore do HTML (DOM), extrair seletores CSS/XPath e converter o caos visual da web em dicionários de dados brutos e estruturados.
-
-#### 🔥 Mojo (O Motor de Computação e Vetorização)
-Aqui o projeto atinge performance de nível de sistema. O Mojo entra para resolver o gargalo de processamento que o Python criaria ao lidar com milhões de pontos de dados.
-*   **Como age:** O Mojo utiliza SIMD (Single Instruction, Multiple Data) para processar vetores de dados simultaneamente. Ele age diretamente na memória do container, realizando a normalização de strings, sanitização de caracteres especiais e cálculos de conversão de câmbio em nanosegundos.
-*   **Responsabilidade:** Atuar como um filtro de alta vazão. Ele recebe o "entulho" de dados do Python e entrega um dataset limpo e tipado para o banco de dados, garantindo que a CPU não seja sobrecarregada por loops lentos.
-
-#### 💎 Ruby 3.3 (A Máquina de Estado e Regras de Negócio)
-O Ruby é a linguagem da expressividade. Em sistemas de precificação, as regras de negócio mudam conforme a estratégia de marketing.
-*   **Como age:** O Ruby consome os dados persistidos e os passa por um motor de lógica (Rules Engine). Graças à sua natureza altamente dinâmica, ele permite definir algoritmos complexos — como o "Price Elasticity" — de forma quase verbal. Ele age comparando o delta de preços entre o passado e o presente.
-*   **Responsabilidade:** Inteligência lógica. Ele decide se uma alteração de preço é uma anomalia (erro do concorrente) ou uma tendência real de mercado, gerando o sinal que alimentará a IA.
-
-#### 🐘 PHP 8.3 / Laravel 11 (O Orquestrador de Infraestrutura)
-O Laravel não é apenas o "site", é o Control Plane do ecossistema.
-*   **Como age:** O Laravel gerencia os Jobs e Queues (filas de trabalho). Ele coordena quando os scrapers devem rodar, garante a segurança da API que se comunica com a OpenAI e mantém a integridade das sessões dos usuários. Através do Eloquent ORM, ele abstrai a complexidade do banco de dados MySQL para os outros containers.
-*   **Responsabilidade:** Interface administrativa, segurança, gestão de tarefas agendadas e integração com o frontend Vue.js para o Chatbot de IA.
-
----
-###  (EN-US) Why each language for each action? (Deep Architecture)
-
-#### 🐍 Python 3.12 (DOM Interaction Layer)
-Python was not chosen for speed, but for its networking ecosystem. The scraping layer requires resilience against bot detection.
-*   **How it acts:** The Python container uses the Scrapy framework to simulate human behavior. It manages the HTTP request lifecycle, rotates headers (User-Agents), and solves rendering challenges via specialized middleware.
-*   **Responsibility:** Navigating the HTML tree structure (DOM), extracting CSS/XPath selectors, and converting web chaos into structured raw data dictionaries.
-
-#### 🔥 Mojo (Computation and Vectorization Engine)
-This is where the project reaches system-level performance. Mojo is introduced to solve the processing bottleneck that Python would create when dealing with millions of data points.
-*   **How it acts:** Mojo utilizes SIMD (Single Instruction, Multiple Data) to process data vectors simultaneously. It acts directly on the container’s memory, performing string normalization, sanitization, and currency conversion calculations in nanoseconds.
-*   **Responsibility:** Acting as a high-throughput filter. It receives the data "debris" from Python and delivers a clean, typed dataset to the database, ensuring the CPU is not bogged down by slow loops.
-
-#### 💎 Ruby 3.3 (State Machine and Business Rules)
-Ruby is the language of expressiveness. In pricing systems, business rules shift according to marketing strategies.
-*   **How it acts:** Ruby consumes the persisted data and passes it through a Rules Engine. Thanks to its highly dynamic nature, it allows for defining complex algorithms — such as Price Elasticity — in a near-verbal way. It calculates the price delta between past and present values.
-*   **Responsibility:** Logical intelligence. It decides if a price change is an anomaly (competitor error) or a real market trend, generating the signal that feeds the AI.
-
-#### 🐘 PHP 8.3 / Laravel 11 (Infrastructure Orchestrator)
-Laravel is not just the "website"; it is the Control Plane of the ecosystem.
-*   **How it acts:** Laravel manages Jobs and Queues. It coordinates when scrapers should run, secures the API communication with OpenAI, and maintains user session integrity. Through Eloquent ORM, it abstracts the MySQL database complexity for the other containers.
-*   **Responsibility:** Admin interface, security, scheduled task management, and Vue.js frontend integration for the AI Chatbot.
+| Componente / Component | Runtime | Missão Crítica / Critical Mission |
+| :--- | :--- | :--- |
+| **Ingestion** | Python 3.12 (Scrapy) | Gerenciamento de requisições HTTP, rotação de proxies e extração de DOM. |
+| **Refinement** | Mojo | Sanitização de strings e computação vetorial de baixo nível na memória. |
+| **Strategy** | Ruby 3.3 | Processamento dinâmico de regras de negócio e cálculo de deltas. |
+| **Orchestration** | PHP 8.3 / Laravel 11 | Despacho de Jobs, logs de auditoria e segurança de borda. |
+| **Streaming** | RabbitMQ / Kafka | Desacoplamento assíncrono e transporte imutável de eventos. |
+| **Settlement** | Java 21 (Spring Boot) | Máquina de Estados Finita (FSM) e orquestração transacional ACID. |
+| **Persistence** | PostgreSQL 16 | Locks de linha puros, integridade relacional e barreiras físicas de hardware. |
 
 ---
 
+## 📁 Estrutura de Engenharia / Repository Blueprint
 
-## 📁 Estrutura de Pastas / Project Structure
 ```text
-PROJETOFLUXOSCRAPE/
+KnotPay/
+├── .docker/                  # Microservices infrastructure blueprints
+│   ├── php-orchestrator/
+│   ├── python-scraper/
+│   ├── ruby-engine/
+│   ├── mojo-core/
+│   └── java-financial/
 │
-├── .docker/                # Infrastructure blueprints (Dockerfiles)
-│   ├── php/                # PHP 8.3 & Apache environment
-│   ├── python/             # Python 3.12 & Scraping tools
-│   ├── ruby/               # Ruby 3.3 & Logic Engine environment
-│   └── mojo/               # Mojo SDK & Performance environment
+├── 1-ingestion-stream/       # The Data Inflow Pipeline
+│   ├── scraper-python/       # Asynchronous Web Crawlers
+│   ├── core-mojo/            # Low-Level Vector Sanitization
+│   ├── engine-ruby/          # Pricing & Opportunity DSL
+│   └── control-laravel/      # Audit Logging & Event Dispatcher
 │
-├── core-mojo/              # High-Performance Engine (Mojo)
-│   ├── src/                # Heavy data processing logic
-│   └── main.mojo           # Entry point for fast computation
+├── 2-settlement-engine/      # The Financial Vault
+│   ├── src/main/java/        # Spring Boot Core Engine
+│   │   ├── broker/           # Event Stream Consumers
+│   │   ├── state/            # FSM (Finite State Machine) State Enforcement
+│   │   └── repository/       # Pessimistic Locking Queries (SELECT FOR UPDATE)
+│   └── schema-postgres/      # Table definitions, Row-Locks & Check Constraints
 │
-├── dashboard-php/          # Control Center (Laravel 11)
-│   ├── app/                # Business Logic & AI Bridges
-│   ├── resources/js/       # Frontend (Vue.js ChatBot)
-│   └── database/           # Schema and Migrations
+├── scripts/                  # Chaos Engineering Labs
+│   └── go-stress-test/       # Concurrent Goroutines attempting to force race-conditions
 │
-├── engine-ruby/            # Decision Engine (Ruby 3.3)
-│   ├── lib/                # Analytical classes
-│   └── processor.rb        # Background worker for data analysis
-│
-├── scraper-python/         # Data Harvesters (Python 3.12)
-│   ├── spiders/            # Scrapy bots
-│   └── main.py             # Orchestrator
-│
-├── .env                    # API Keys & DB Credentials
-├── docker-compose.yml      # The "Master Key" orchestrating the stack
-└── README.md               # Documentation
+├── docker-compose.yml        # Multi-runtime cluster orchestration
+└── README.md                 # System Manifesto
