@@ -108,6 +108,24 @@ The system avoids the "scripting monolith" trap. It uses an **Event-Driven Polyg
 
 ---
 
+---
+
+### 🧪 Chaos Engineering & Operational Rigor / Engenharia do Caos e Rigor Operacional
+
+**[PT-BR]** O KnotPay não é mantido por testes unitários passivos, mas por uma cultura de **Engenharia do Caos agressiva**. O Ouroboros executa ataques simulados continuamente, forçando o sistema a provar sua estabilidade sob condições adversas. Nosso rigor operacional é medido pela capacidade do sistema de manter a atomicidade das transações (ACID) mesmo quando os componentes de rede sofrem falhas, latência ou injeção de pacotes maliciosos. Não testamos se o sistema funciona; testamos como ele sobrevive quando tudo ao seu redor falha.
+
+**[EN-US]** KnotPay is not maintained by passive unit tests, but by a culture of **aggressive Chaos Engineering**. Ouroboros continuously executes simulated attacks, forcing the system to prove its stability under adverse conditions. Our operational rigor is measured by the system's ability to maintain transactional atomicity (ACID) even when network components suffer failures, latency spikes, or malicious packet injection. We do not test if the system works; we test how it survives when everything around it fails.
+
+---
+
+### 🚀 Join the Evolution / Junte-se à Evolução
+
+**[PT-BR]** Este é um projeto de pesquisa avançada em sistemas de alta frequência e segurança defensiva. Buscamos colaboradores que entendam a sinergia entre o desempenho bruto (Mojo), a resiliência de estado (Java) e a inteligência de orquestração (AI/ML). Se você domina a arte de construir sistemas "indestrutíveis", o KnotPay é o seu laboratório.
+
+**[EN-US]** This is an advanced research project in high-frequency systems and defensive security. We are seeking collaborators who understand the synergy between raw performance (Mojo), state resilience (Java), and orchestration intelligence (AI/ML). If you master the art of building "indestructible" systems, KnotPay is your laboratory.
+
+---
+
 
 ## 📁 Estrutura de Engenharia / Repository Blueprint
 
