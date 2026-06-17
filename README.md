@@ -6,6 +6,11 @@
 
 ## 🇧🇷 Português (PT-BR)
 
+
+### 🇧🇷 Português
+**⚠️ Aviso de Estudo Arquitetural**
+Este repositório é um projeto de pesquisa arquitetural, explorando os limites de pipelines transacionais de alta frequência. O objetivo é avaliar a interoperabilidade entre diferentes runtimes e os trade-offs de performance de uma abordagem poliglota. Este é um protótipo conceitual e um projeto de arquitetura em desenvolvimento.
+
 ### 🎯 O Conceito: A Aniquilação do Vácuo de Decisão
 No ecossistema moderno de e-commerce, arbitragem de ativos digitais e compras industriais (procurement), a informação tem um prazo de validade medido em milissegundos. Tradicionalmente, as empresas operam com "vácuos de decisão": ferramentas monitoram o mercado e geram alertas em dashboards para que um humano, eventualmente, tome a decisão de compra. Até que o clique ocorra, a oportunidade já desapareceu ou o preço foi corrigido.
 
@@ -28,6 +33,9 @@ O sistema evita o erro comum do "monolito de scripting". Ele utiliza uma **Arqui
 ---
 
 ## 🇺🇸 English (EN-US)
+
+**⚠️ Conceptual Architecture Study**
+This repository serves as an architectural research project, exploring the boundaries of high-frequency transactional pipelines. The goal is to evaluate the interoperability between different runtimes and the performance tradeoffs of a polyglot approach. This is an ongoing conceptual prototype and architectural blueprint.
 
 ### 🎯 The Concept: The Annihilation of the Decision Vacuum
 In high-frequency markets—whether it's e-commerce, asset arbitrage, or industrial procurement—the delay between discovering an opportunity and settling the payment is the vacuum where millions are lost. **KnotPay** obliterates this decision latency.
