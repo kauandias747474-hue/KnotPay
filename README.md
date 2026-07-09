@@ -166,6 +166,7 @@ KnotPay is not maintained by passive unit tests, but by a culture of aggressive 
 
 ---
 
+    
 ### 🚀 Join the Evolution
 This is an advanced research project in high‑frequency systems and defensive security. We are seeking collaborators who understand the synergy between raw performance (Python), state resilience (Java), and orchestration intelligence (AI/ML). If you master the art of building "indestructible" systems, KnotPay is your laboratory.
 
@@ -204,3 +205,124 @@ KnotPay/
 ├── docker-compose.yml        # Multi‑runtime cluster orchestration
 └── README.md                 # System Manifesto
 ```
+
+---
+
+# 🪢 KnotPay: Diagrama de Fluxo da Linha de Montagem Tecnológica
+
+---
+
+## 🇧🇷 Português
+
+### 📊 Diagrama de Sequência do Sistema
+
+O diagrama abaixo ilustra o fluxo completo de uma transação no KnotPay, desde a captura do dado bruto na web até a liquidação financeira atômica. O sistema atua como uma **linha de montagem poliglota**, onde cada componente é especializado em uma função crítica.
+
+```mermaid
+sequenceDiagram
+    actor Market as 🌐 Mercado
+    participant Scrapy as 🐍 Scrapy (Ingestão)
+    participant Pandas as 🐼 Pandas (Refino)
+    participant Ruby as ♦️ Ruby (Cérebro de Risco)
+    participant Laravel as 🟣 Laravel (Orquestração)
+    participant Queue as 📨 RabbitMQ/Kafka
+    participant Java as ☕ Java (Liquidação)
+    participant DB as 🗄️ PostgreSQL
+
+    Note over Scrapy, DB: 🧪 Ouroboros (Fuzzer) monitora passivamente e injeta falhas para testar a resiliência
+
+    Market ->> Scrapy: Página web (HTML)
+    Scrapy ->> Pandas: Dados brutos extraídos
+    Pandas ->> Ruby: Dados sanitizados (tipados e convertidos)
+    Ruby ->> Laravel: Sinal de Compra / Decisão
+    Laravel ->> Queue: Publica evento de compra com Chave de Idempotência
+    Queue ->> Java: Consome evento de compra
+    Java ->> DB: Lock Pessimista (SELECT FOR UPDATE)
+    DB -->> Java: Confirma lock
+    Java ->> DB: Transação ACID (grava liquidação)
+    DB -->> Java: Sucesso
+    Java -->> Queue: Confirmação de liquidação
+    Queue -->> Laravel: Status final
+    Laravel ->> Scrapy: Feedback para ajuste de estratégia (opcional)
+```
+
+### 🧩 Explicação das Etapas
+
+1. **🌐 Mercado → 🐍 Scrapy (Ingestão e Radar)**  
+   O *scraper* em Python (Scrapy) acessa páginas web públicas (e-commerce, marketplaces, etc.) e extrai dados brutos como preços, disponibilidade e descrições de produtos. Essa etapa utiliza rotação de proxies e gerenciamento de sessões HTTP para evitar bloqueios.
+
+2. **🐍 Scrapy → 🐼 Pandas (Refino e Sanitização)**  
+   Os dados brutos passam por uma limpeza rigorosa com Pandas e Pydantic. Moedas são convertidas, tipos são validados e outliers são removidos. O resultado é um *dataset* normalizado e confiável para a tomada de decisão.
+
+3. **🐼 Pandas → ♦️ Ruby (Cérebro de Risco)**  
+   Um motor de regras em Ruby aplica uma DSL (Domain-Specific Language) de negócio. Ele calcula a margem de lucro esperada (preço de revenda − custos − taxas) e gera um **Sinal de Compra** somente se o delta for positivo e seguro.
+
+4. **♦️ Ruby → 🟣 Laravel (Orquestração e Despacho)**  
+   O sinal de compra é recebido pelo plano de controle em PHP/Laravel, que audita a decisão e publica um **evento de compra** em uma fila de alta velocidade (RabbitMQ ou Kafka). Cada evento carrega uma **Chave de Idempotência** rigorosa para evitar duplicidades.
+
+5. **📨 Fila → ☕ Java → 🗄️ PostgreSQL (Músculo Financeiro Atômico)**  
+   O motor de liquidação em Java consome o evento da fila. Uma **Máquina de Estados Finita (FSM)** valida o estado da transação. Em seguida, aplica um **Lock Pessimista (SELECT FOR UPDATE)** no banco PostgreSQL e executa uma **transação ACID** que registra a liquidação de forma atômica. Se qualquer parte falhar, toda a operação é revertida.
+
+6. **🧪 Ouroboros (Sistema Imunológico Autônomo)**  
+   Durante todo o fluxo, o módulo Ouroboros observa passivamente o comportamento do sistema. Ele injeta mutações (bit-flipping, integer overflows) nas entradas para simular ataques adversariais. Se a FSM atingir um estado ilegal, o Ouroboros gera uma **vacina estrutural** que bloqueia aquele vetor de ataque no nível da borda, antes que atinja o núcleo financeiro.
+
+---
+
+## 🇺🇸 English
+
+### 📊 System Sequence Diagram
+
+The diagram below illustrates the complete transaction flow in KnotPay, from raw web data capture to atomic financial settlement. The system acts as a **polyglot assembly line**, where each component is specialized for a critical function.
+
+```mermaid
+sequenceDiagram
+    actor Market as 🌐 Market
+    participant Scrapy as 🐍 Scrapy (Ingestion)
+    participant Pandas as 🐼 Pandas (Refinement)
+    participant Ruby as ♦️ Ruby (Risk Brain)
+    participant Laravel as 🟣 Laravel (Orchestration)
+    participant Queue as 📨 RabbitMQ/Kafka
+    participant Java as ☕ Java (Settlement)
+    participant DB as 🗄️ PostgreSQL
+
+    Note over Scrapy, DB: 🧪 Ouroboros (Fuzzer) passively monitors and injects faults to test resilience
+
+    Market ->> Scrapy: Web page (HTML)
+    Scrapy ->> Pandas: Raw extracted data
+    Pandas ->> Ruby: Sanitized data (typed and converted)
+    Ruby ->> Laravel: Buy Signal / Decision
+    Laravel ->> Queue: Publishes purchase event with Idempotency Key
+    Queue ->> Java: Consumes purchase event
+    Java ->> DB: Pessimistic Lock (SELECT FOR UPDATE)
+    DB -->> Java: Lock confirmed
+    Java ->> DB: ACID Transaction (records settlement)
+    DB -->> Java: Success
+    Java -->> Queue: Settlement confirmation
+    Queue -->> Laravel: Final status
+    Laravel ->> Scrapy: Feedback for strategy adjustment (optional)
+```
+
+### 🧩 Step-by-Step Explanation
+
+1. **🌐 Market → 🐍 Scrapy (Ingestion and Radar)**  
+   The Python scraper (Scrapy) accesses public web pages (e-commerce, marketplaces, etc.) and extracts raw data such as prices, availability, and product descriptions. This stage uses proxy rotation and HTTP session management to avoid blocks.
+
+2. **🐍 Scrapy → 🐼 Pandas (Refinement and Sanitization)**  
+   Raw data undergoes rigorous cleaning with Pandas and Pydantic. Currencies are converted, types are validated, and outliers are removed. The result is a normalized, reliable dataset for decision-making.
+
+3. **🐼 Pandas → ♦️ Ruby (Risk Brain)**  
+   A Ruby rule engine applies a business DSL (Domain-Specific Language). It calculates the expected profit margin (resale price − costs − fees) and generates a **Buy Signal** only if the delta is positive and safe.
+
+4. **♦️ Ruby → 🟣 Laravel (Orchestration and Dispatch)**  
+   The buy signal is received by the PHP/Laravel control plane, which audits the decision and publishes a **purchase event** to a high-speed queue (RabbitMQ or Kafka). Each event carries a strict **Idempotency Key** to prevent duplicates.
+
+5. **📨 Queue → ☕ Java → 🗄️ PostgreSQL (Atomic Financial Muscle)**  
+   The Java settlement engine consumes the event from the queue. A **Finite State Machine (FSM)** validates the transaction state. It then applies a **Pessimistic Lock (SELECT FOR UPDATE)** on the PostgreSQL database and executes an **ACID transaction** that records the settlement atomically. If any part fails, the entire operation is rolled back.
+
+6. **🧪 Ouroboros (Autonomous Immune System)**  
+   Throughout the flow, the Ouroboros module passively observes the system's behavior. It injects mutations (bit-flipping, integer overflows) into the inputs to simulate adversarial attacks. If the FSM reaches an illegal state, Ouroboros generates a structural **vaccine** that blocks that attack vector at the edge, before it touches the financial core.
+```
+
+---
+
+Com esse README, o diagrama do KnotPay ficará totalmente documentado e acessível tanto em português quanto em inglês, pronto para impressionar recrutadores e colaboradores técnicos.
