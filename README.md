@@ -323,6 +323,3 @@ sequenceDiagram
    Throughout the flow, the Ouroboros module passively observes the system's behavior. It injects mutations (bit-flipping, integer overflows) into the inputs to simulate adversarial attacks. If the FSM reaches an illegal state, Ouroboros generates a structural **vaccine** that blocks that attack vector at the edge, before it touches the financial core.
 ```
 
----
-
-Com esse README, o diagrama do KnotPay ficará totalmente documentado e acessível tanto em português quanto em inglês, pronto para impressionar recrutadores e colaboradores técnicos.
